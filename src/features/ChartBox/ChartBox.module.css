@@ -1,0 +1,15 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 0 4rem 4rem 4rem;
+  width: 80rem;
+  height: 50rem;
+  background-color: beige;
+  border-radius: 0.5rem;
+  margin: 4rem;
+
+  .chart {
+    flex-grow: 1;
+  }
+}
