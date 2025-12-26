@@ -11,7 +11,6 @@ interface ChartComponentProps {
 
 
 export const ChartComponent = React.memo(({ source }: ChartComponentProps) => {
-  console.log(source)
   const data: Series[] = [{
     label: 'expenses',
     data: source.map(el => ({ ...el, date: new Date(el.date) }))

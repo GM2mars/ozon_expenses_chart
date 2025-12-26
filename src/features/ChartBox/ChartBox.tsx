@@ -1,9 +1,7 @@
 import React from 'react';
-import dayjs from 'dayjs';
 
 import { ChartComponent } from './components/Chart/Chart';
-import { DateRange } from './components/dateRange/DateRange';
-
+import { DateRange } from './components/DateRange/DateRange';
 import { useChartBoxActions, useChartBoxCalendarRange, useChartBoxData } from './ChartBox.state';
 
 import s from './ChartBox.module.css';
