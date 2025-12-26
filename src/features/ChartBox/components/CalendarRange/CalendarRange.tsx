@@ -1,14 +1,14 @@
 import React from "react";
 
 
-interface DateRangeProps {
+interface CalendarRangeProps {
   minDate: string;
   maxDate: string;
   onChange: (value: string[]) => void;
 };
 
 
-export const DateRange = React.memo(({ minDate, maxDate, onChange }: DateRangeProps) => {
+export const CalendarRange = React.memo(({ minDate, maxDate, onChange }: CalendarRangeProps) => {
   const [selectedRange, setSelectedRange] = React.useState<string[]>([]);
 
   const selectDateStart = (e: any) => {

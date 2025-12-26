@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { ChartComponent } from './components/Chart/Chart';
-import { DateRange } from './components/DateRange/DateRange';
+import { CalendarRange } from './components/CalendarRange/CalendarRange';
 import { useChartBoxActions, useChartBoxCalendarRange, useChartBoxData } from './ChartBox.state';
 
 import s from './ChartBox.module.css';
@@ -20,7 +20,7 @@ export function ChartBox() {
 
   return (
     <div className={s.container}>
-      <DateRange minDate={range[0]} maxDate={range[1]} onChange={setRange} />
+      <CalendarRange minDate={range[0]} maxDate={range[1]} onChange={setRange} />
       <div className={s.chart}>
         <ChartComponent source={data} />
       </div>
