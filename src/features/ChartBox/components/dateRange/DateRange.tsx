@@ -1,7 +1,5 @@
 import React from "react";
 
-import s from './DateRange.module.css';
-
 
 interface DateRangeProps {
   minDate: string;
@@ -27,8 +25,9 @@ export const DateRange = React.memo(({ minDate, maxDate, onChange }: DateRangePr
     onChange(selectedRange);
   }, [selectedRange]);
 
+
   return (
-    <div className={s.container}>
+    <div>
       <h2>{'Select date range'}</h2>
       <input type="date" min={minDate} max={maxDate} onChange={selectDateStart} />
       {' - '}
